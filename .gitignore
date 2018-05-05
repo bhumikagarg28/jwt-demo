@@ -1,6 +1,7 @@
 .project
 .settings
 .classpath
+/classes
 ##### OS generated files
 .DS_Store*
 Thumbs.db
@@ -38,16 +39,6 @@ Thumbs.db
 .gradle
 **/build/
 gradle-app.setting
+!gradle-wrapper.jar
 ##### File-based project format:
 *.iws
-
-##########crowd-lending
-
-.asscache
-hs_err*
-bin/
-
-##########fin360
-wrapper
-grailsw*
-.slcache/
