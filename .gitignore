@@ -1,0 +1,53 @@
+.project
+.settings
+.classpath
+##### OS generated files
+.DS_Store*
+Thumbs.db
+##### web application files
+/web-app/WEB-INF/classes
+##### default HSQL database files for production mode
+/prodDb.*
+##### general HSQL database files
+*Db.properties
+*Db.script
+##### Logs
+*.log
+/stacktrace.log
+/test/reports
+/logs
+##### project release file
+/*.war
+##### plugin release files
+/*.zip
+/plugin.xml
+##### older plugin install locations
+/plugins
+/web-app/plugins
+##### "temporary" build files
+/target
+##### File-based project format
+*.iws
+##### IntelliJ
+.idea
+/out/
+*.iml
+*.ipr
+.idea/**/workspace.xml
+##### Gradle
+.gradle
+**/build/
+gradle-app.setting
+##### File-based project format:
+*.iws
+
+##########crowd-lending
+
+.asscache
+hs_err*
+bin/
+
+##########fin360
+wrapper
+grailsw*
+.slcache/
