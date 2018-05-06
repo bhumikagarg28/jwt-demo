@@ -73,6 +73,8 @@ dependencies {
 
     console "org.grails:grails-console"
 
+    //mysql
+    runtime 'mysql:mysql-connector-java:5.1.36'
     //spring-security plugin
     compile 'org.grails.plugins:spring-security-core:3.1.2'
 }

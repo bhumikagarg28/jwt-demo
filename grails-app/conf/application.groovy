@@ -1,3 +1,48 @@
+dataSource {
+    pooled = true
+    driverClassName = "com.mysql.jdbc.Driver"
+    dialect = 'org.hibernate.dialect.MySQL5InnoDBDialect'
+}
+
+environments {
+    development {
+        dataSource {
+            dbCreate = "create-drop"
+            url = "jdbc:mysql://localhost:3306/jwt_demo?autoreconnect=true&allowMultiQueries=true"
+            username = "root"
+            logSql = false
+            password = "nextdefault"
+        }
+    }
+    test {
+        dataSource {
+            dbCreate = "create"
+            url = "jdbc:mysql://localhost:3306/jwt_demo?autoreconnect=true"
+            username = "root"
+            logSql = false
+            password = "nextdefault"
+        }
+    }
+    production {
+        dataSource {
+            username = "root"
+            password = "nextdefault"
+            dbCreate = "create"
+            url = "jdbc:mysql://localhost:3306/jwt_demo?autoreconnect=true&allowMultiQueries=true"
+            pooled = true
+            properties {
+                maxActive = -1
+                minEvictableIdleTimeMillis = 1800000
+                timeBetweenEvictionRunsMillis = 1800000
+                numTestsPerEvictionRun = 3
+                testOnBorrow = true
+                testWhileIdle = true
+                testOnReturn = true
+                validationQuery = "SELECT 1"
+            }
+        }
+    }
+}
 // Added by the Spring Security Core plugin:
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.jwtdemo.User'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.jwtdemo.UserRole'
