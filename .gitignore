@@ -41,5 +41,5 @@ Thumbs.db
 **/build/
 gradle-app.setting
 !gradle-wrapper.jar
-##### File-based project format:
+##### File-based project format:b
 *.iws

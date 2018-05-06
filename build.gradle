@@ -72,6 +72,9 @@ dependencies {
     testRuntime 'org.seleniumhq.selenium:selenium-htmlunit-driver:2.44.0'
 
     console "org.grails:grails-console"
+
+    //spring-security plugin
+    compile 'org.grails.plugins:spring-security-core:3.1.2'
 }
 
 task wrapper(type: Wrapper) {
