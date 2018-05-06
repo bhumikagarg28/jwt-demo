@@ -1,6 +1,7 @@
 .project
 .settings
 .classpath
+.asscache
 /classes
 ##### OS generated files
 .DS_Store*
